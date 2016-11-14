@@ -1,0 +1,22 @@
+{
+  "name": "jdf-http-upload",
+  "version": "0.1.0",
+  "description": "jdf http upload server side",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "catalsdevelop@gmail.com",
+  "homepage": "https://github.com/jdf2e/httpupload",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdf2e/httpupload.git"
+  },
+  "engines": {
+    "node": ">= 4.4.0"
+  },
+   "bugs": {
+    "url": "https://github.com/jdf2e/httpupload/issues"
+  },
+  "license": "MIT"
+}
