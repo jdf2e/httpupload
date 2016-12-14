@@ -21,6 +21,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "busboy": "^0.2.13",
     "fs-extra": "^1.0.0"
   }
 }

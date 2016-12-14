@@ -3,7 +3,6 @@
 const http = require('http');
 const Busboy = require('busboy');
 const path = require('path');
-const fs = require('fs');
 const fs = require('fs-extra');
 const port = 8000;
 
