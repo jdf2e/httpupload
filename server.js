@@ -4,7 +4,7 @@ const http = require('http');
 const Busboy = require('busboy');
 const path = require('path');
 const fs = require('fs');
-const fsPath = require('fs-path');
+const fs = require('fs-extra');
 const port = 8000;
 
 const server = http.createServer((req, res) => {
@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
             });
             file.on('end', () => {
                 const buffer = Buffer.concat(buffers);
-                fsPath.writeFile(fieldname, buffer);
+                fs.outputFile(fieldname, buffer, {mode : 0o776});
             });
         });
         busbody.on('finish', () => {

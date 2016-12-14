@@ -4,7 +4,8 @@
   "description": "jdf http upload server side",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "release": "npm version patch && npm publish && git push --follow-tags"
   },
   "author": "catalsdevelop@gmail.com",
   "homepage": "https://github.com/jdf2e/httpupload",
@@ -15,8 +16,11 @@
   "engines": {
     "node": ">= 4.4.0"
   },
-   "bugs": {
+  "bugs": {
     "url": "https://github.com/jdf2e/httpupload/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^1.0.0"
+  }
 }
